@@ -13,4 +13,11 @@ var app_fireBase = {};
 firebase.initializeApp(firebaseConfig);
 
 app_fireBase = firebase;
+
+app_fireBase.databaseApi = {
+   create: fnCreate,
+   read: fnRead,
+   update: fnUpdate,
+   delete: fnDelete
+}
 })()

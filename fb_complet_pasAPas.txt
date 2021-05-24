@@ -315,5 +315,33 @@ var mainApp = {};
   de manera autonàtica a la pàgina login.html.
   
   
-  
+2a Part - RULES
+creem una base de dades (Realtime Database)
+A la pestanya Data no apareix res, perque encara no tenim cap dada.
+I ara anem a la pestanya de rules (normes) per crear les normes de control.
+
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth !== null && auth.uid === $uid",
+        ".write": "auth !== null && auth.uid === $uid",
+        ".validate": "newData.hasChildren(['name', 'age', 'message'])",
+        "name": {".validate": "newData.isString() && newData.val().length > 0 && newData.val().length < 30"},
+        "age": {".validate": "newData.isNumber() && newData.val() > 0 && newData.val() < 120"},
+        "message": {".validate": "newData.isString() && newData.val().length > 0 && newData.val().length < 1000"},
+        "$other": {".validate": false}
+      }
+    }
+  }
+}
+
+Aquestes normes son les següents:
+es permet llegir a tots els 
+
+
+
+
+
+
   
