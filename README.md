@@ -1,29 +1,31 @@
-How to set up Authentication using Firebase (Web)
-https://www.youtube.com/watch?v=CvkCjfHts9A
+# Repo fb_complet
 
+1. Creem la següent carpeta:
+```\fb_complet```
 
-Creem la següent carpeta:
-D:\REPOS\FireBase\fb_complet
+1. Creem els següents 4 fitxers:
 
-Obrim Code
-
-Creem els següents fitxers:4
-
+```
 login.html
 main.html
 login.js
 main.js
 fireBase.js
+```
 
+1. Amb el **Visual Studio Code** Obrim el fitxer ```login.html```
 
-Obrim
-login.html
-html:5
+Amb l'snipet ```html:5``` creem el següent codi:
 
+```html
 <title>Document</title> => <title>Login</title>
+```
+i amb ```script src```
 
-script src
+```html
 <script src="./login.js"></script>
+```
+
 just abans de tancar el body
 
 i també afegim el fireBase.js abans del login script.
@@ -317,3 +319,6 @@ var mainApp = {};
   
   
   
+
+
+[How to set up Authentication using Firebase (Web)](https://www.youtube.com/watch?v=CvkCjfHts9A)
