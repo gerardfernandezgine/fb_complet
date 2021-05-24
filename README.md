@@ -361,4 +361,21 @@ var mainApp = {};
 
 ![image](https://user-images.githubusercontent.com/63462877/119344689-3e3a6f80-bc98-11eb-9810-5cf23749bc07.png)
 
+```json
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth !== null && auth.uid === $uid",
+        ".write": "auth !== null && auth.uid === $uid",
+        ".validate": "newData.hasChildren(['name', 'age', 'message'])",
+        "name": {".validate": "newData.isString() && newData.val().length > 0 && newData.val().length < 30"},
+        "age": {".validate": "newData.isNumber() && newData.val() > 0 && newData.val() < 120"},
+        "message": {".validate": "newData.isString() && newData.val().length > 0 && newData.val().length < 1000"},
+        "$other": {".validate": false}
+      }
+    }
+  }
+}
+```
 
