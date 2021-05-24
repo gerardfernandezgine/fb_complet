@@ -1,9 +1,9 @@
 # Repo fb_complet
 
-1. Creem la següent carpeta:
+###  1. Creem la següent carpeta:
 ```\fb_complet```
 
-1. Creem els següents 4 fitxers:
+###  2. Creem els següents 5 fitxers:
 
 ```
 login.html
@@ -13,35 +13,68 @@ main.js
 fireBase.js
 ```
 
-1. Amb el **Visual Studio Code** Obrim el fitxer ```login.html```
+###  3. Amb el **Visual Studio Code** Obrim el fitxer ```login.html```
 
-Amb l'snipet ```html:5``` creem el següent codi:
+###  4. Amb l'**snipet** ```html:5``` creem el següent codi:
 
-```html
-<title>Document</title> => <title>Login</title>
-```
-i amb ```script src```
+![image](https://user-images.githubusercontent.com/63462877/119330567-9ff1de00-bc86-11eb-949e-6e150c8d3f65.png)
 
 ```html
-<script src="./login.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+   </head>
+   <body>
+   
+   </body>
+</html>
 ```
 
-just abans de tancar el body
+###  5. I modifiquem el **títol** del text **```Document```** per defecte al nou text **```Login```**.
 
-i també afegim el fireBase.js abans del login script.
-<script src="./fireBase.js"></script>
+```html
+      <title>Document</title>
+```
+per
+```html
+      <title>Login</title>
+```
 
-Fem exactament el mateix, pero amb el main.html, i en comptes d'afegir el login.js afegim el main.js.
+###  6. Amb l'**snipet** ```script src```
 
-Un cop tenim això anem a la consola de FireBase i ens connectem amb el nostre compte.
+![image](https://user-images.githubusercontent.com/63462877/119330841-f9f2a380-bc86-11eb-8325-843900b06f89.png)
 
-Afegim un nou projecte
-Nom: fbComplet
-Desactivem: Enable Google Analytics for this project
+###  7. afegim l'enllaç al fitxer ```login.js``` just abans de l'etiqueta de tancament del **```body```**.
 
-I ja tenim el projecte creat.
-Afegim una nova app web
-Nom: fbCompletApp
+```html
+      <script src="./login.js"></script>
+```
+
+###  8. I també afegim l'enllaç al fitxer ```fireBase.js``` abans de l'script ```login```.
+```html
+      <script src="./fireBase.js"></script>
+```
+
+###  9. Fem exactament el mateix, pero amb el ```main.html```, i en comptes d'afegir el ```login.js``` afegim el ```main.js```.
+
+### 10. Un cop tenim això anem a la consola de ```FireBase``` i ens connectem amb el nostre compte.
+
+### 11. Afegim un nou projecte
+
+**Nom**: **```fbComplet```**
+
+**Desactivem**: *```Enable Google Analytics for this project```*
+
+Arribats a aques punt, ja tenim el projecte **```fbComplet```** creat.
+
+### 11. Ara toca afegir una nova app web.
+
+**Nom**: **```fbCompletApp```**
+
 
 En oferirà un "snniped"
 
