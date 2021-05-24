@@ -78,6 +78,7 @@ Arribats a aques punt, ja tenim el projecte **```fbComplet```** creat.
 
 En oferirà un "snniped"
 
+```html
 /*
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
@@ -99,6 +100,8 @@ En oferirà un "snniped"
   firebase.initializeApp(firebaseConfig);
 </script>
 */
+```
+
 El copiem i l'enganxem al fitxer login.html dins del head area.
 
 "Tallem" la part de l'script de la configuració i la "enganxem" al fitxer "fireBase.js".
