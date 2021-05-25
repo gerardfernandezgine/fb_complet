@@ -10,8 +10,7 @@
          return true;
        },
        uiShown: function() {
-         // L'UI es dibuixa
-         // I s'amaga el "loader".
+         // Es dibuixa l'UI es dibuixa i s'amaga el "loader".
          document.getElementById('loader').style.display = 'none';
        }
      },
