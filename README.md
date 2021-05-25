@@ -352,9 +352,30 @@ var mainApp = {};
   sense passar per la pàgina login.html, aquesta, en veure que no está validar, el redirigirà
   de manera autonàtica a la pàgina login.html.
   
-  
-  
-  
-
 
 [How to set up Authentication using Firebase (Web)](https://www.youtube.com/watch?v=CvkCjfHts9A)
+
+# 2a PART
+
+![image](https://user-images.githubusercontent.com/63462877/119343465-c750a700-bc96-11eb-862a-a5b9c2b6d396.png)
+
+![image](https://user-images.githubusercontent.com/63462877/119344689-3e3a6f80-bc98-11eb-9810-5cf23749bc07.png)
+
+```json
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth !== null && auth.uid === $uid",
+        ".write": "auth !== null && auth.uid === $uid",
+        ".validate": "newData.hasChildren(['name', 'age', 'message'])",
+        "name": {".validate": "newData.isString() && newData.val().length > 0 && newData.val().length < 30"},
+        "age": {".validate": "newData.isNumber() && newData.val() > 0 && newData.val() < 120"},
+        "message": {".validate": "newData.isString() && newData.val().length > 0 && newData.val().length < 1000"},
+        "$other": {".validate": false}
+      }
+    }
+  }
+}
+```
+
